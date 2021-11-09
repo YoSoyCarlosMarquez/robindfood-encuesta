@@ -1,0 +1,20 @@
+server:
+  servlet:
+    context-path: /api
+spring: 
+  datasource:
+    url: jdbc:mariadb://127.0.0.1:3306/robinfood?serverTimezone=America/Bogota
+    username: root
+    password:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format-sql: true
+   
+message:
+  exception:
+    general: "Ha ocurrido un error"
+    nofound: "Información no encontrada"
+    badrequest: "Petición no valida"
+    constraintviolation: "Se ha infringido una integridad de datos"
